@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>White Board</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <div class="flex-container">
+      <div><h1>White Board</h1></div>
+    </div>
+
+    <div class="flex-container">
+      <div>
+        <canvas id="sheet" width="1100" height="530"></canvas>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div>
+        <button class="round-button red selected"onclick="selectColor('red')"></button>
+      </div>
+      <div>
+        <button class="round-button green"onclick="selectColor('green')"></button>
+      </div>
+      <div>
+        <button class="round-button blue"onclick="selectColor('blue')"></button>
+      </div>
+      <div>
+        <button class="round-button white"onclick="selectColor('white')"></button>
+      </div>
+    </div>
+    
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="/javascripts/draw.js"></script>
+</html>
